@@ -21,20 +21,20 @@ def get_company():
     data = pandas.json_normalize(finsymbols.get_sp500_symbols())
     return(data['symbol'], data)
 
-def get_values(tickers):
+def get_values(symbols):
     """
-    - gets two years of history for tickers
+    - gets two years of history for symbols
     - parse the json into a pandas dataframe
     
     Parameters
-    - "tickers"... a series of s&p500 tickers
+    - "symbols"... a series of s&p500 symbols
     ----------
 
     Returns
     - "data"... a df of two years of history
     -------
     """
-    for i in numpy.arange(0, len(tickers), 1):
+    for i in numpy.arange(0, len(symbols), 1):
         ticker = tickers[i]
         url = "https://mboum-finance.p.rapidapi.com/op/option"
         querystring = {"expiration":"1705622400","symbol":"AAPL"}
