@@ -9,9 +9,9 @@ This is an example of an end-to-end data pipeline implemented in python / postgr
 
 ## App Setup and Instructions
 
-**Important**
+### Important
 - To get the app to run
-    - Must add a db.ini file to project directory specifying "host", "database", "username", "password"
+    - Must add a db.ini file to project directory with section titled "postgresql" with items "host", "database", "username", "password"
     - Must specify username and password to connect to postgres
 - developed on mac OS
 
@@ -22,7 +22,7 @@ The code and main app.py script can accomplish the following tasks:
 - Create 'stocks' db schema from terminal (tables, stored procedures, etc... Raw SQL embedded in .py files)
 - Create python virtual environment for project
 - The app.py is a pipeline that:
-    - Retrieves stock data from web apis
+    - Retrieves stock data from web apis (1 implemented, but could be scaled to more)
     - Cleans api responses
     - Writes api responses to 'stocks' db tables
 
