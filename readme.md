@@ -1,11 +1,23 @@
-# Get Stock Data
+# Example Python Application
 
-This is a python application that does the following:
-- Installs Postgresql
-- Creates 'stocks' db, creates db objects in db_configure.py
-- Gets stock data from different apis
-- Cleans and transforms the api responses
-- Writes cleaned data to postgres
+This is an example of a simple python / postgresql application directory that can perform many tasks.
+
+It is meant to demonstrate proficiency in the following:
+- Python syntax and semantics
+- Object-oriented design patterns and concepts
+- Design and implementation of relational databases
+- Data transformation and manipulation
+- Design and implementation of end-to-end data pipelines
+
+The code and main app.py script can accomplish the following tasks:
+- Install Postgresql from terminal
+- Create 'stocks' db from terminal
+- Create 'stocks' db schema (tables, stored procedures, etc... Raw SQL embedded in .py files)
+- Create python virtual environment for project
+- The app.py is a pipeline that:
+    - Retrieves stock data from web apis
+    - Cleans api responses
+    - Writes api responses to 'stocks' db tables
 
 **Important**
 - To get the app to run
