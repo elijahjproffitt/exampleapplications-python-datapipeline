@@ -35,7 +35,7 @@ def get_values(symbols):
     -------
     """
     for i in numpy.arange(0, len(symbols), 1):
-        ticker = tickers[i]
+        ticker = symbols[i]
         url = "https://mboum-finance.p.rapidapi.com/op/option"
         querystring = {"expiration":"1705622400","symbol":"AAPL"}
         headers = {

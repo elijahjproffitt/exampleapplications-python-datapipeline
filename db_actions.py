@@ -58,5 +58,6 @@ def write_company(data):
         insert_something(sql)
     
     # return symbols
+    print(data['symbol'])
     return(data['symbol'])
 

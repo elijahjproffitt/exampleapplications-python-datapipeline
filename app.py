@@ -21,6 +21,6 @@ def main():
     db_actions.write_company(data)
 
     # get values with symbols 
-    api_actions.get_values(symbols)
+    # api_actions.get_values(symbols)
 
 main()
